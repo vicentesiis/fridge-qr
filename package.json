@@ -12,8 +12,7 @@
   "scripts": {
     "start": "nodemon server",
     "test": "lab -a code -L",
-    "lint": "eslint .",
-    "postinstall": "./node_modules/bower/bin/bower install"
+    "lint": "eslint ."
   },
   "keywords": [
     "QR"
@@ -33,7 +32,8 @@
     "hapi-swagger": "9.x.x",
     "inert": "5.x.x",
     "vision": "5.x.x",
-    "nodemon": "1.x.5"
+    "nodemon": "1.x.5",
+    "mongoose": "5.x.x"
   },
   "dependencies": {
     "boom": "7.x.x",

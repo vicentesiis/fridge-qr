@@ -2,6 +2,8 @@
 
 const Glue = require('glue');
 const Manifest = require('./manifest');
+const DbUrl    = require('./config');
+const Mongoose = require('mongoose');
 
 exports.deployment = async (start) => {
 
@@ -13,6 +15,17 @@ exports.deployment = async (start) => {
     if (!start) {
         return server;
     }
+
+    console.log(process.env.PORT);
+
+    Mongoose.connect(DbUrl.mongoLocal, { 'useNewUrlParser': true }, (err) => {
+
+        if (err)
+            throw err;
+
+        console.info(`Connected to Mongodb - ${DbUrl.mongoLocal}`);
+
+    });
 
     await server.start();
 
