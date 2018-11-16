@@ -10,7 +10,7 @@ Dotenv.config({ path: `${__dirname}/.env` });
 // Glue manifest as a confidence store
 module.exports = new Confidence.Store({
     server: {
-        host: '0.0.0.0',
+        host: 'localhost',
         port: process.env.PORT || 3000,
         debug: {
             $filter: 'NODE_ENV',
@@ -32,6 +32,9 @@ module.exports = new Confidence.Store({
                     $default: 'hpal-debug',
                     production: Toys.noop
                 }
+            },
+            {
+                plugin: './plugins/swagger'
             }
         ]
     }
