@@ -1,0 +1,46 @@
+{
+  "name": "fridge-qr",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Vicente Cantu",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node server",
+    "test": "lab -a code -L",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "QR"
+  ],
+  "devDependencies": {
+    "eslint-plugin-hapi": "4.x.x",
+    "code": "5.x.x",
+    "dotenv": "6.x.x",
+    "eslint": "5.x.x",
+    "eslint-config-hapi": "12.x.x",
+    "confidence": "3.x.x",
+    "glue": "5.x.x",
+    "hapi": "17.x.x",
+    "hpal-debug": "1.x.x",
+    "lab": "16.x.x",
+    "toys": "2.x.x"
+  },
+  "dependencies": {
+    "boom": "7.x.x",
+    "haute-couture": "3.x.x",
+    "joi": "13.x.x"
+  },
+  "bugs": {
+    "url": "https://github.com/vicentesiis/fridge-qr/issues"
+  },
+  "homepage": "https://github.com/vicentesiis/fridge-qr#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vicentesiis/fridge-qr.git"
+  }
+}
