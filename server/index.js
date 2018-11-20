@@ -16,14 +16,12 @@ exports.deployment = async (start) => {
         return server;
     }
 
-    console.log(process.env.PORT);
-
-    Mongoose.connect(DbUrl.mongoLocal, { 'useNewUrlParser': true }, (err) => {
+    Mongoose.connect(DbUrl.uri, { 'useNewUrlParser': true }, (err) => {
 
         if (err)
             throw err;
 
-        console.info(`Connected to Mongodb - ${DbUrl.mongoLocal}`);
+        console.info(`Connected to Mongodb - ${DbUrl.uri}`);
 
     });
 

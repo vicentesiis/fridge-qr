@@ -1,7 +1,7 @@
 'use strict';
 
-const mongoLocal = 'mongodb://localhost:27017/fridge-db';
+const uri = process.env.URI;
 
 module.exports = {
-    mongoLocal
+    uri
 };
