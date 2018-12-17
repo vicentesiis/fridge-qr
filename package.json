@@ -34,7 +34,7 @@
     "inert": "5.x.x",
     "lab": "16.x.x",
     "mongoose": "5.x.x",
-    "nodemon": "1.x.5",
+    "nodemon": "1.18.7",
     "toys": "2.x.x",
     "vision": "5.x.x"
   },
