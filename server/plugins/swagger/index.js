@@ -20,7 +20,9 @@ module.exports = {
                     validatorUrl     : null,
                     info             : {
                         version: Package.version
-                    }
+                    },
+                    host: process.env.HOST,
+                    schemes: process.env.SCHEME
                 }
             }
         ]);
