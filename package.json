@@ -10,7 +10,7 @@
     "test": "test"
   },
   "scripts": {
-    "start": "nodemon server",
+    "start": "node server",
     "test": "lab -a code -L",
     "lint": "eslint ."
   },
